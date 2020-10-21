@@ -1,0 +1,10 @@
+Promises
+observables
+subjects
+behaviour subject
+event emitters
+viewchildes and contentchild
+injectable servies
+Routing
+
+

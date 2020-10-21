@@ -1,0 +1,7 @@
+<p>login works!</p>
+
+  <div>    
+   Please enter Name:-<input type="text" id="txtloginname" [(ngModel)]="username" #txtUserID required  ><br><div></div>
+   Please enter password <input type="password" id="txtpwd" [(ngModel)]="pwd" #txtpwd required  > <br>
+   <button type="button" id="btnLogin" (click)="onLoginClick($event)">Login &nbsp;</button>
+  </div>

@@ -1,0 +1,10 @@
+<div>
+  <h4>View Child And View Children</h4>
+  <div> ng-template works!</div>
+  <ng-template *ngIf="Show">Inside ng-template tag</ng-template>
+
+  <div>
+    <p>Here we are accessing message component with that selector</p>
+    <app-message [Info]="PassingInfo"></app-message>
+  </div>
+</div>

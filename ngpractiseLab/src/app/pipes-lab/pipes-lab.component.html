@@ -1,0 +1,32 @@
+<p>pipes-lab works!</p>
+<div>
+        <p> a way to write display-value transformations that you can declare in your HTML. 
+                A pipe takes in data as input and transforms it to a desired output.</p>
+                <h3>Custom String Pipes</h3>
+                {{strname|lowercase}}<br>
+                {{strname|uppercase}}<br>
+                {{strname|titlecase}}<br>
+                {{strname|slice:7:11}}<br>
+                object data to json format {{person|json}}
+                <h3>Integer Pipes</h3>
+                {{5.678|number:'1.1-2'}}<br>
+                {{5.678|number:'3.4-6'}}<br>
+                {{5.678|number:'1.5-6'}}<br>
+                <h3>Date pipes</h3>
+                {{date}}<br>
+                {{date|date:'short'}}<br>
+                {{date|date:'shortDate'}}<br>
+                {{date|date:'shortTime'}}<br>
+                <p>The {{strname|slice:7:11}} birthday is {{date|date:'shortDate' }}
+                <h3>Percentage Pipe</h3>
+                {{0.25|percent}}
+                <h3>Currency Pipe</h3>
+                {{0.25|currency}}<br>
+                {{0.25|currency:'INS':'code'}}<br>
+                <h3>Chaining pipes</h3>
+                {{ date | date | uppercase}}
+                <h3>Custome pipes</h3>
+                {{2|exponential:10}}
+
+</div>
+

@@ -1,0 +1,73 @@
+
+
+Femplate - represent view [UI]
+class - code type scripts controls logic to view
+metadata-  
+selector[3ways]-app-test[like tag]/.app-test[like class ex:- <div class ="app-test">]/[app-test] (like attribute)[div app-test]
+
+interpolation - ts to html
+what can do -expression evolution
+can't:-
+assignments are not possible and gloabl js variables.
+
+property
+dom element vs prop 
+attributes and prop are not same
+attributes difined by html
+ ---------------------------------------- 12/4/2019-------------------------------
+Ng-8
+1.Differential loading - two bunndleys [performance]
+MB-ES6+
+OD-ES5
+bundle size was reduced to 7-20%
+2.Dynamic imports for lazy routes:-
+syntax has changed . previously string now industry standard
+{path :'/user',loadchildren:'./user/user.module#UserModule'}
+{path:'/user',loadchildren:()=>import('./user/user.module').then(m=>m.UserModule)}
+3.IVY:- rendering engine
+Translating the templates and components into reqular HTML and JS that the browser can understand
+nothing breaks - can opt -in 
+ng new demo -enable-ivy
+it has Generate considerably smaller bundles, make incremental compilation easier and is also going to be basis for future innovations
+4.Bazel - build tool[experimental in version-8]
+Changes:-
+1.type script version 3.4 and node version 12 or later
+2.Legacy HttpModule and the Http service is deprecated. Use HttpclientModule and HttpClient service instead
+3.View child and content child
+@viewChild('foo') foo :elementRef;
+@viewChild('foo',{static:false}) foo :elementRef; - true it means that result availble ngoninit rather than ngafterviewinit
+
+Databinding
+ChangeTracking
+Validation
+Visual feedback
+Error Msg
+Form submission
+
+colletc data-->bind data --> send data -->sql
+
+Two approaches:-
+Template Driven Froms:- Heavy on the component template
+Reactive Froms:- Heavy on the component class
+
+TDF:- 
+1.Easy to use and similar to NGjs forms
+2. Two way data binnding with ngModule
+3. Bulky HTML and minimal component code
+4. Automatically tracks the form and form elements state and validity
+Cons:-
+1.Unit testing
+2.Readability decreases with complex forms and validations
+3.Suitable for simple scenarions
+
+Steps:-
+1.New project
+2. Add the form HTML
+3.Binding data
+4. Tracking state and validity
+5. Provide visual feed back
+6.Error message
+7.Posting data to server
+
+To install latest version in system
+npm install -g @angular/cli@latest

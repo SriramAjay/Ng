@@ -1,0 +1,7 @@
+<p>employee-header!</p>
+<div *ngFor="let t of employee">
+   <li (click)="data($event)">{{t.name}}</li>
+</div>
+{{onselect}}
+<!-- [selectRec]="onselect"-->
+<app-employee-details></app-employee-details>
