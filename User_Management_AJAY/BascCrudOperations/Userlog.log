@@ -1,0 +1,247 @@
+2020-12-22 09:59:57,511 INFO BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:: Query: : Exec Sp_UpdateUserInfo ,Rama1,RE,ajaj@gmail.com,1,5656565654 
+2020-12-22 10:00:44,312 FATAL BascCrudOperations.Data.UserRepository.UpdateUserInfo - Exception: System.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@UserID nvarchar(4000),@FirstName nvarchar(5),@LastName nvarcha' expects the parameter '@UserID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c.<NonQuery>b__4_0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreCommandInternal(String commandText, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass174_0.<ExecuteStoreCommand>b__1()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass174_0.<ExecuteStoreCommand>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreCommand(TransactionalBehavior transactionalBehavior, String commandText, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlCommand(TransactionalBehavior transactionalBehavior, String sql, Object[] parameters)
+   at System.Data.Entity.Database.ExecuteSqlCommand(TransactionalBehavior transactionalBehavior, String sql, Object[] parameters)
+   at System.Data.Entity.Database.ExecuteSqlCommand(String sql, Object[] parameters)
+   at BascCrudOperations.Data.UserRepository.UpdateUserInfo(MT_USER_INFO user) in C:\Users\wdev56\Documents\Visual Studio 2017\Projects\BascCrudOperations\BascCrudOperations\Data\UserRepository.cs:line 179
+ClientConnectionId:9ead2de8-9365-4ec3-bf40-e9d4403f7d26
+Error Number:8178,State:1,Class:16
+ Query: EXEC Sp_UpdateUserInfo @UserID, @FirstName, @LastName, @EmailID, @Gender, @PhoneNumber:
+2020-12-22 10:00:44,345 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:00:44,347 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:00:44,348 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:03:11,199 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:03:11,201 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:03:11,203 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:04:16,495 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:04:16,497 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:04:16,498 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:04:28,219 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:04:28,224 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:04:28,226 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:04:51,051 DEBUG BascCrudOperations.Business.UserService.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:04:51,053 DEBUG BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:04:51,055 INFO BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:: Query: : Exec Sp_UpdateUserInfo r,Rama11,RE,ajaj@gmail.com,1,5656565654 
+2020-12-22 10:04:51,079 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:04:51,082 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:04:51,086 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:06:01,449 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:06:01,451 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:06:01,453 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:07:21,029 DEBUG BascCrudOperations.Business.UserService.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:07:21,041 DEBUG BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:
+2020-12-22 10:07:21,056 INFO BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:: Query: : Exec Sp_IsUserExist 123
+2020-12-22 10:07:21,062 DEBUG BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:07:21,066 INFO BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:: Query: :Exec Sp_InserUserInfo 123,bindu,m,b@gmail.com,female,898989898 
+2020-12-22 10:07:25,202 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:07:25,204 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:07:25,212 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:07:49,309 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:07:49,315 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:07:49,318 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:07:49,327 DEBUG BascCrudOperations.Business.UserService.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:07:49,330 DEBUG BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:07:49,333 INFO BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:: Query: :Exec Sp_DeleteUserInfo r
+2020-12-22 10:08:23,877 DEBUG BascCrudOperations.Business.UserService.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:08:23,879 DEBUG BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:
+2020-12-22 10:08:23,881 INFO BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:: Query: : Exec Sp_IsUserExist r
+2020-12-22 10:08:23,885 DEBUG BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:08:23,886 INFO BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:: Query: :Exec Sp_InserUserInfo r,shy,m,kjkj@gmail.com,female,4343 
+2020-12-22 10:08:23,904 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:08:23,905 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:08:23,907 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:10:11,853 DEBUG BascCrudOperations.Business.UserService.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:10:11,855 DEBUG BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:10:11,857 INFO BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:: Query: :Exec Sp_DeleteUserInfo r
+2020-12-22 10:10:20,924 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:10:20,926 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:10:20,929 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:12:34,064 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:12:34,066 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:12:34,068 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:13:01,112 DEBUG BascCrudOperations.Business.UserService.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:13:01,114 DEBUG BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:
+2020-12-22 10:13:01,115 INFO BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:: Query: : Exec Sp_IsUserExist 11
+2020-12-22 10:13:01,122 DEBUG BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:13:01,125 INFO BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:: Query: :Exec Sp_InserUserInfo 11,212,21212,asad@gamil.com,male,4343232 
+2020-12-22 10:13:01,142 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:13:01,145 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:13:01,146 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:13:13,165 DEBUG BascCrudOperations.Business.UserService.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:13:13,167 DEBUG BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:13:13,170 INFO BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:: Query: :Exec Sp_DeleteUserInfo 11
+2020-12-22 10:13:13,186 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:13:13,188 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:13:13,191 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:14:12,966 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:14:12,968 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:14:12,971 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:14:40,394 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:14:40,395 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:14:40,397 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:15:00,331 DEBUG BascCrudOperations.Business.UserService.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:15:00,331 DEBUG BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:
+2020-12-22 10:15:00,334 INFO BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:: Query: : Exec Sp_IsUserExist 23232
+2020-12-22 10:15:00,338 DEBUG BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:15:00,338 INFO BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:: Query: :Exec Sp_InserUserInfo 23232,21312321,213123,dasdsada,female,3123123 
+2020-12-22 10:15:00,356 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:15:00,358 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:15:00,360 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:15:06,400 DEBUG BascCrudOperations.Business.UserService.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:15:06,402 DEBUG BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:15:06,403 INFO BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:: Query: :Exec Sp_DeleteUserInfo 23232
+2020-12-22 10:15:06,423 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:15:06,426 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:15:06,427 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:15:54,775 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:15:54,777 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:15:54,778 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:16:10,005 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:16:10,007 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:16:10,009 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:18:33,580 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:18:33,583 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:18:33,586 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:20:53,547 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:20:53,550 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:20:53,552 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:21:39,047 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:21:39,049 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:21:39,051 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:23:19,986 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:23:19,988 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:23:19,990 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:23:26,617 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:23:26,619 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:23:26,623 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:28:17,907 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:28:17,908 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:28:17,910 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:28:46,451 DEBUG BascCrudOperations.Business.UserService.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:28:46,454 DEBUG BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:28:46,455 INFO BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:: Query: : Exec Sp_UpdateUserInfo 123,bindull,m,b@gmail.com,female,898989898 
+2020-12-22 10:28:46,473 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:28:46,475 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:28:46,477 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:29:21,709 DEBUG BascCrudOperations.Business.UserService.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:29:21,711 DEBUG BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:
+2020-12-22 10:29:21,712 INFO BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:: Query: : Exec Sp_IsUserExist ss
+2020-12-22 10:32:34,705 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:32:34,707 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:32:34,709 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:32:41,039 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:32:41,041 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:32:41,044 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:33:30,524 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:33:30,529 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:33:30,531 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:43:49,429 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:43:49,431 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:43:49,433 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:44:21,303 DEBUG BascCrudOperations.Business.UserService.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:44:21,305 DEBUG BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:
+2020-12-22 10:44:21,309 INFO BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:: Query: : Exec Sp_IsUserExist edd
+2020-12-22 10:44:21,317 DEBUG BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:44:21,319 INFO BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:: Query: :Exec Sp_InserUserInfo edd,dd,d,kjlikjkj444,, 
+2020-12-22 10:44:21,364 FATAL BascCrudOperations.Data.UserRepository.InsertUserInfo - Exception: System.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@UserID nvarchar(3),@FirstName nvarchar(2),@LastName nvarchar(1' expects the parameter '@Gender', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c.<NonQuery>b__4_0(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreCommandInternal(String commandText, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass174_0.<ExecuteStoreCommand>b__1()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass174_0.<ExecuteStoreCommand>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreCommand(TransactionalBehavior transactionalBehavior, String commandText, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlCommand(TransactionalBehavior transactionalBehavior, String sql, Object[] parameters)
+   at System.Data.Entity.Database.ExecuteSqlCommand(TransactionalBehavior transactionalBehavior, String sql, Object[] parameters)
+   at System.Data.Entity.Database.ExecuteSqlCommand(String sql, Object[] parameters)
+   at BascCrudOperations.Data.UserRepository.InsertUserInfo(MT_USER_INFO user) in C:\Users\wdev56\Documents\Visual Studio 2017\Projects\BascCrudOperations\BascCrudOperations\Data\UserRepository.cs:line 87
+ClientConnectionId:65820b7d-a0c0-4a3d-b041-33e0129978b5
+Error Number:8178,State:1,Class:16
+ Query: EXEC Sp_InserUserInfo @UserID, @FirstName, @LastName, @EmailID, @Gender, @PhoneNumber:
+2020-12-22 10:44:21,412 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:44:21,414 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:44:21,416 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:44:28,958 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:44:28,960 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:44:28,961 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:44:45,901 DEBUG BascCrudOperations.Business.UserService.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:44:45,903 DEBUG BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:
+2020-12-22 10:44:45,904 INFO BascCrudOperations.Data.UserRepository.IsUserExist - IsUserExist:: Query: : Exec Sp_IsUserExist fffff
+2020-12-22 10:44:45,908 DEBUG BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:
+2020-12-22 10:44:45,909 INFO BascCrudOperations.Data.UserRepository.InsertUserInfo - InsertUserInfo:: Query: :Exec Sp_InserUserInfo fffff,cff,ff,ff,male,4444 
+2020-12-22 10:44:45,923 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:44:45,925 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:44:45,927 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:45:06,228 DEBUG BascCrudOperations.Business.UserService.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:45:06,231 DEBUG BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:45:06,233 INFO BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:: Query: : Exec Sp_UpdateUserInfo fffff,cff,ff,ff@gmail.com,female,4444 
+2020-12-22 10:45:06,254 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:45:06,255 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:45:06,258 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:45:16,207 DEBUG BascCrudOperations.Business.UserService.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:45:16,208 DEBUG BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:
+2020-12-22 10:45:16,210 INFO BascCrudOperations.Data.UserRepository.UpdateUserInfo - UpdateUserInfo:: Query: : Exec Sp_UpdateUserInfo fffff,cff,ff,ff@gmail.com,male,4444 
+2020-12-22 10:45:16,224 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:45:16,227 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:45:16,230 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:45:21,647 DEBUG BascCrudOperations.Business.UserService.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:45:21,649 DEBUG BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:
+2020-12-22 10:45:21,651 INFO BascCrudOperations.Data.UserRepository.DeleteUserInfo - DeleteUserInfo:: Query: :Exec Sp_DeleteUserInfo fffff
+2020-12-22 10:45:21,665 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:45:21,667 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:45:21,669 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:46:33,835 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:46:33,839 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:46:33,841 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:48:45,949 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:48:45,951 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:48:45,954 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 10:50:10,568 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 10:50:10,571 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 10:50:10,573 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 11:04:03,609 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 11:04:03,611 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 11:04:03,613 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 11:04:44,522 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 11:04:44,525 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 11:04:44,528 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 11:22:52,635 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 11:22:52,638 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 11:22:52,640 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 11:23:31,048 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 11:23:31,051 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 11:23:31,054 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 
+2020-12-22 11:33:35,655 DEBUG BascCrudOperations.Business.UserService.GetUserInfo - GetUserInfo:
+2020-12-22 11:33:35,659 DEBUG BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo:
+2020-12-22 11:33:35,661 INFO BascCrudOperations.Data.UserRepository.GetUserInfo - GetUserInfo: :  Query:  : EXEC Sp_GetUserInfo 

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="USERINFOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MT_USER_INFO">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FIRST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LAST_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EMAIL_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GENDER" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE_NUMBER" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="USERINFOEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MT_USER_INFO" EntityType="Self.MT_USER_INFO" />
+  </EntityContainer>
+</Schema>
